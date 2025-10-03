@@ -1,0 +1,13 @@
+# Python / Node / macOS / editor
+.env
+.venv/
+venv/
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.vscode/
+.idea/
