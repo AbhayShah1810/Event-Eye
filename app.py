@@ -6,7 +6,7 @@ from email_sender import bulk_send_certificates
 
 st.set_page_config(layout="wide", page_title="EventEye Certificate Automation")
 
-st.title("⚡ AI-Powered Certificate Automation for EventEye")
+st.title("EventEye Certificate Generator")
 st.markdown("Automate certificate generation, 'AI' verification, and bulk email distribution.")
 
 uploaded_file = st.file_uploader("Upload Participant List (CSV file with 'name' and 'email' columns)", type="csv")
@@ -67,15 +67,3 @@ if uploaded_file is not None:
         )
 else:
     st.info("Waiting for a CSV upload to begin the automation process.")
-    st.markdown(
-        """
----
-### ⚙️ How to Run This Project
-1.  **Dependencies:** `pip install -r requirements.txt`
-2.  **Email Auth:** Create a `.env` file with `SENDER_EMAIL`, `SENDER_NAME`, and `GMAIL_APP_PASSWORD`.
-3.  **Template:** Place your certificate image in `assets/base_certificate.png`.
-4.  **Run:** `streamlit run app.py`
-"""
-    )
-
-
